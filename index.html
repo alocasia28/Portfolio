@@ -12,7 +12,6 @@
 <!-- My notes for task list 
 - Link Projects at the top to the Projects section
     - Add in another page with a table for individual projects for HTML/CSS with placeholder text. (Sat)
-- Get in Touch at the top links to contact form
 - Add in links for LinkedIn and GitHub
 - Contact Form
     - Change Send Message field to a button in CSS
@@ -63,10 +62,18 @@
         <div class="Projects">
             <h3 id="Projects">PROJECTS </h3>
             <div class="portfolio-container"> 
-                <div class="portfolio-tiles">HTML/CSS</div>
-                <div class="portfolio-tiles">PYTHON</div>
-                <div class="portfolio-tiles">DJANGO</div>
-                <div class="portfolio-tiles">REACT</div>
+                <div class="portfolio-tiles">
+                    <a href="projects.html">HTML/CSS</a>
+                </div>
+                <div class="portfolio-tiles">
+                    <a href="projects.html">PYTHON</a>
+                </div>
+                <div class="portfolio-tiles">
+                    <a href="projects.html">DJANGO</a>
+                </div>
+                <div class="portfolio-tiles">
+                    <a href="projects.html">REACT</a>
+                </div>
             </div>
         </div>
 
@@ -76,8 +83,14 @@
             <h3>My Journey</h3>
         </section> -->
         <div class = "form-container">
-            <form>
-                    <h3 id="Contact Form">Get in Touch</h3>
+            <form action=”mailto:portfolio@ahills.co”
+            method=”POST”
+            enctype=”text/plain”>
+                <h3 id="Contact Form">Get in Touch</h3>
+                
+    
+                
+                
                     <label for ="fullname"></label> 
                     <input type="text" id="fullname" name="fullname" placeholder="NAME">
 

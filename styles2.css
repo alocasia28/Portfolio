@@ -7,6 +7,7 @@ html{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #353e45;
     scroll-behavior: smooth;
+    color: #FFF;
     
 }
 *, *:before, *:after {
@@ -95,6 +96,7 @@ form {
     width: 80%;
     align-self: center;
     height: 200px;
+    border: 1px white solid;
    
    
     
@@ -108,16 +110,21 @@ input {
     border: none;
     
 }
+div.about-me-container {
+    padding-bottom: 100px;
+    border: 1px white solid;
+}
 
 div.Projects {
-    margin-top: 100px;
+    /* margin-top: 100px; */
+    border: 1px solid white;
+    padding-bottom: 100px;
 }
 
 div.form-container {
-    margin-top: 200px;
-    
     height: 200px;
     width: 50%;
+    padding-bottom: 100px;
     
 }
 
@@ -133,7 +140,10 @@ input {
     color: #FFF;
 }
 /* Portfolio Section */
-
+div.portfolio-tiles a {
+    text-decoration: none;
+    color: #fff;
+}
 
 
 
