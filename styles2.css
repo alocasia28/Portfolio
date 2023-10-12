@@ -5,15 +5,22 @@
 
 html{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #353e45;
     scroll-behavior: smooth;
-    color: #FFF;
+    background-color: var(--grey);
+    
     
 }
 *, *:before, *:after {
     box-sizing: inherit;
 }
 
+:root {
+    --grey:#dce2e6;
+    --focus1: #10634b;
+    --focus2: #ab5718;
+    --focus3: #9d386c;
+    --white: #fff;
+}
 /* Session with Jess */
 div {
     /* border: 1px solid red; */
@@ -21,6 +28,7 @@ div {
     display: flex;
     flex-direction: column;
     align-items: center;
+   
 
     
 }
@@ -30,7 +38,7 @@ main {
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
-    background-color: #353e45;
+   
 }
 /* Style guide */
 
@@ -38,13 +46,16 @@ h1 {
     display:inline-block;
     font-weight: 700;
     margin:20px;
-  
+    color: var(--white);
 }
 
 nav {
     font-weight: 500;
-    background-color: #5d9754;
+    background-color:var(--focus1);
+    opacity: 80%;
     vertical-align: middle;
+   
+
     
    
 }
@@ -65,29 +76,46 @@ h2,h3 {
 /* Header */
 header {
     width: 100%;
-    background-color: #5d9754;
-    display:block;
+    background-color: var(--focus1);
     border-radius: 10px;
     position:sticky;
     top: 0;
         
 }
 
-
 nav a {
-    display: inline-block;
-    
+    display:inline-block;
     margin: 8px;
     text-decoration: none;
-    color: #fff;
+    color: var(--white);
     vertical-align: middle;
  
   
 }
+nav a:hover {
+    background-color: var(--focus3);
+    height: 24px;
+    padding: 4px;
+    display:inline;
+    transition: 0.5s;
+    text-decoration: underline;
+}
+
+nav a:active {
+    background-color: var(--focus2);
+    transition: 0s;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+nav.icon {
+    display: none;
+  }
+
 /* About Me Section */
 img.profile-picture {
     width: 200px;
     border-radius: 10px;
+    border: #9d386c 2px dotted;
 }
 
 form {
@@ -96,12 +124,14 @@ form {
     width: 80%;
     align-self: center;
     height: 200px;
-    border: 1px white solid;
+    
    
    
     
 
 }
+
+
 input {
     display: flex;
     flex-direction: row;
@@ -112,13 +142,15 @@ input {
 }
 div.about-me-container {
     padding-bottom: 100px;
-    border: 1px white solid;
+
 }
 
 div.Projects {
-    /* margin-top: 100px; */
-    border: 1px solid white;
     padding-bottom: 100px;
+    /* background-color: var(--grey); */
+    /* opacity: 90%; */
+    color: #e7fffc;
+    border-radius: 10px;
 }
 
 div.form-container {
@@ -142,9 +174,14 @@ input {
 /* Portfolio Section */
 div.portfolio-tiles a {
     text-decoration: none;
-    color: #fff;
+    color: var(--white)
 }
 
+div.portfolio-tiles:hover {
+    background: var(--focus3);
+    text-decoration:underline;
+   
+}
 
 
 /* Hero Section */
@@ -154,6 +191,7 @@ div.portfolio-tiles a {
 /* Class Selector*/
 .header {
     width: 100%;
+
 }
 
 .portfolio-container {
@@ -175,9 +213,10 @@ div.portfolio-tiles a {
     height: 80px;
     display: flex;
     font-size: small;
-    background-color: #547f4d;
+    background-color: var(--focus2);
     color: #FFF;
     border-radius: 10px;
+
    
     
 }
@@ -204,35 +243,65 @@ footer a{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Media Queries */
+@media (max-width:600px) {
+    
+div.portfolio-container {
+    display: flex;
+
+}
+/* div.portfolio-tiles {
+    width: 200px;
+    height: 200px;
+} */
+}
+    /* @media(max-width:600px) {
+        nav a {
+            display:none;
+        }
+        div {
+            background-color: red;
+        }
+    } */
+
+
+    /* media query with the hamburger menu working */
+@media screen and (max-width: 600px) {
+    .nav a:not(:first-child) {display: none;}
+    .nav a.icon {
+        display: right;
+        
+    }
+    .nav.responsive {position: relative;}
+    
+    .nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+    
+    .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    }
+
+
+}
+
+
+
+/* @media screen and (max-width: 600px) {
+  .nav.responsive {position: relative;}
+  .nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  } */
+
+      
