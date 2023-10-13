@@ -7,6 +7,7 @@ html{
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
     background-color: var(--grey);
+    color: #10634b;
     
     
 }
@@ -20,17 +21,21 @@ html{
     --focus2: #ab5718;
     --focus3: #9d386c;
     --white: #fff;
+    --dark-grey: #888888;
 }
-/* Session with Jess */
+/* Formatting for multiple elements */
 div {
     /* border: 1px solid red; */
     width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
-   
-
     
+}
+
+div.heading {
+    display: flex;
+    justify-content: center;
 }
 
 main {
@@ -40,38 +45,6 @@ main {
     margin-top: 50px;
    
 }
-/* Style guide */
-
-h1 {
-    display:inline-block;
-    font-weight: 700;
-    margin:20px;
-    color: var(--white);
-}
-
-nav {
-    font-weight: 500;
-    background-color:var(--focus1);
-    opacity: 80%;
-    vertical-align: middle;
-   
-
-    
-   
-}
-
-
-h2,h3 {
-    text-align: center;
-    
-}
-
-/* p {
-    border: 1px black solid;
-
-} */
-
-
 
 /* Header */
 header {
@@ -79,19 +52,35 @@ header {
     background-color: var(--focus1);
     border-radius: 10px;
     position:sticky;
-    top: 0;
-        
+    top: 0;     
+}
+
+h1 {
+    display:inline-block;
+    font-weight: 700;
+    margin:20px;
+    color: var(--white);
+    /* color: var(--grey); */
+    font-size: 2.5em;
+}
+
+nav {
+    font-weight: 500;
+    background-color:var(--focus1);
+    vertical-align: middle;
+   
 }
 
 nav a {
-    display:inline-block;
-    margin: 8px;
+    display:inline;
+    margin: 5px;
     text-decoration: none;
     color: var(--white);
     vertical-align: middle;
- 
+    flex-direction: row;
   
 }
+
 nav a:hover {
     background-color: var(--focus3);
     height: 24px;
@@ -101,10 +90,6 @@ nav a:hover {
     text-decoration: underline;
 }
 
-nav a:active {
-    background-color: var(--focus2);
-    transition: 0s;
-}
 
 /* Hide the link that should open and close the topnav on small screens */
 nav.icon {
@@ -115,35 +100,41 @@ nav.icon {
 img.profile-picture {
     width: 200px;
     border-radius: 10px;
-    border: #9d386c 2px dotted;
+    border: #fff 2px solid;
 }
-
-form {
-    display:flex;
-    flex-direction: column;
-    width: 80%;
-    align-self: center;
-    height: 200px;
-    
-   
-   
-    
-
-}
-
-
-input {
+div.profile-picture {
     display: flex;
-    flex-direction: row;
-    height: 28px;
+    justify-content: center;
+    align-content: center;
+    height: 300px;
+}
+
+div.about-me-container {
+    background-color: var(--grey);
+    /* border: #fff 2px solid; */
     padding: 10px;
-    border: none;
+    border-radius: 10px;
+    color: var(--focus1);
     
 }
-div.about-me-container {
-    padding-bottom: 100px;
 
+div.bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+h2, h3 {
+    text-align: center;
+    font-size: 2em ;
+    margin: 0;
+    
+}
+
+p {
+    font-size: 1em;
+}
+/* Projects Section */
 
 div.Projects {
     padding-bottom: 100px;
@@ -153,25 +144,17 @@ div.Projects {
     border-radius: 10px;
 }
 
-div.form-container {
-    height: 200px;
-    width: 50%;
-    padding-bottom: 100px;
-    
-}
-
-label {
+.projects-container {
+    margin-top:20px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
+    flex-direction: column;
+    border: var(--dark-grey) 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 100px;
 }
 
-input {
-    background-color: #353e45;
-    color: #FFF;
-}
-/* Portfolio Section */
+
 div.portfolio-tiles a {
     text-decoration: none;
     color: var(--white)
@@ -180,8 +163,89 @@ div.portfolio-tiles a {
 div.portfolio-tiles:hover {
     background: var(--focus3);
     text-decoration:underline;
+    transition: 0.75;
    
 }
+
+
+
+/* form {
+    display:flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    height: 200px;
+    
+
+} */
+
+.labels {
+    display: flex;
+    flex-direction: column;
+    border: #10634b 1px solid;
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--white);
+}
+
+
+
+
+
+div#Contact-Form.form-container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    border: var(--dark-grey) 2px solid;
+    
+}
+
+label {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-self: flex-start;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+div.fields {
+    justify-content: center;
+}
+
+input {
+    background-color:var(--focus1);
+    padding: 20px;
+    padding: 10px;
+    border: none;
+    color:#000;
+    border-radius: 5px;
+}
+
+input:focus {
+    background-color: var(--focus3);
+}
+
+button {
+    width: 50%;
+    align-self: center;
+    background-color: var(--dark-grey);
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+
+}
+/* Portfolio Section */
+
 
 
 /* Hero Section */
@@ -199,13 +263,13 @@ div.portfolio-tiles:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 10px;
     /* border: 1px solid blue; */
 }
 
 .portfolio-tiles {
     margin: 2px;
     padding: 2px;
-
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -215,7 +279,7 @@ div.portfolio-tiles:hover {
     font-size: small;
     background-color: var(--focus2);
     color: #FFF;
-    border-radius: 10px;
+    border-radius: 100px;
 
    
     
@@ -228,11 +292,12 @@ div.portfolio-tiles:hover {
 
 /* Footer */
 footer {
-    background-color: #547f4d;  
+    background-color: var(--focus3);
     width: 100%;
     text-align: center;
     font-size: 10px;
     display:block;
+    border-radius: 10px;
    
 }
 
@@ -250,10 +315,7 @@ div.portfolio-container {
     display: flex;
 
 }
-/* div.portfolio-tiles {
-    width: 200px;
-    height: 200px;
-} */
+
 }
     /* @media(max-width:600px) {
         nav a {
@@ -266,11 +328,17 @@ div.portfolio-container {
 
 
     /* media query with the hamburger menu working */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
+    
     .nav a:not(:first-child) {display: none;}
     .nav a.icon {
         display: right;
-        
+    
+    }
+
+    nav a {
+        display: flex;
+        flex-direction: row;
     }
     .nav.responsive {position: relative;}
     
@@ -281,27 +349,67 @@ div.portfolio-container {
     }
     
     .nav.responsive a {
-    float: none;
+    float:none;
     display: block;
-    text-align: left;
+    text-align: center;
     }
 
+    h1 {
+        font-size: 2em;
+    }
 
+    div#Contact-Form.form-container {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 100px;
+        margin-top: 20px;
+        border: var(--dark-grey) 2px solid;
+        
+    }
+}
+
+
+@media screen and (min-width:768px) {
+    div {
+        /* border: 1px solid blue; */
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+       
+    
+        
+    }
+    .nav a.icon {
+        display: none;
+        
+    }
+    div.nav {
+        display: flex;
+        justify-content:right;
+        padding-right: 20px;
+    }
+
+    .nav a {
+        font-size:1.25em;
+    }
+    .portfolio-tiles {
+        width: 150px;
+        height: 150px;
+        
+    }
+    div.portfolio-tiles a {
+        text-decoration: none;
+        color: var(--white);
+        font-size: 20px;
+        
+    }
 }
 
 
 
-/* @media screen and (max-width: 600px) {
-  .nav.responsive {position: relative;}
-  .nav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .nav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  } */
 
       
