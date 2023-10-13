@@ -3,21 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hi, I'm Alisha! </title>
     <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="normalizecss" href="normalize.css"> -->
+    <!-- add in link to style sheet -->
 </head>
+
 <body>
+    
     <header>
         <div class="header">
             <!-- logo from canva here which leads back to homepage -->
-            <h1 class="logo">Alisha Sharaballi</h1>
-            <nav>
-                <a href="#">ABOUT</a>
-                <a href="#Projects">PROJECTS</a>
-                <a href="#Contact Form">GET IN TOUCH</a>
-            </nav>
+            <div>
+                <h1 class="logo">Alisha Sharaballi</h1>
+            </div>
+            <div class="nav">
+                <nav id="myTopnav">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()"> 
+                    <i class="fa fa-bars"></i></a>
+                    <a href="index.html">HOME</a>
+                    <a href="#Projects">PROJECTS</a>
+                    <a href="#Contact-Form">GET IN TOUCH</a>
+                </nav>
+            </div>
         </div> 
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "nav") {
+                x.className += " responsive";
+              } else {
+                x.className = "nav";
+              }
+            }
+            </script>
     </header>
+
     
+   
+
+    <main> 
+        <div class="projects-container">
+            <div class="heading" id="Projects">
+                <h3>PROJECTS </h3>
+                
+            </div>
+            <div class="portfolio-container"> 
+                <div class="portfolio-tiles">
+                    <a href="projects.html">HTML/CSS</a>
+                </div>
+                <div class="portfolio-tiles">
+                    <a href="projects.html">PYTHON</a>
+                </div>
+                <div class="portfolio-tiles">
+                    <a href="projects.html">DJANGO</a>
+                </div>
+                <div class="portfolio-tiles">
+                    <a href="projects.html">REACT</a>
+                </div>
+        </div>
+        </div>
+        
+
+
+<!-- If you're a She Coder in the future, remember that you'll get there! Prioritize what you need for your MVP and then focus on adding the sparkle -->
+        <div class = "form-container" id="Contact-Form">
+            <div class="heading">
+                <h3 >GET IN TOUCH</h3>
+            </div>
+            <div class="labels">
+                <label for ="fullname">NAME</label> 
+                <input type="text" id="fullname" name="fullname" placeholder="NAME">
+
+                <label for ="email">EMAIL</label>
+                <input type="text" id="email" name="email" placeholder ="EMAIL">
+
+                <label for ="message">YOUR MESSAGE</label>
+                <input type="text" id="message" name="message" placeholder ="MESSAGE">
+
+                <button type="submit" action=”https://formspree.io/f/xyyqlebk” method=”POST” enctype=”text/plain”> SUBMIT</button> 
+            </div>
+        </div>
+    </main>
+
+     <footer>
+        <h4>
+            <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" 
+                target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" 
+                src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a>
+            </p>
+        </h4>
+    </footer>
+
+
 </body>
+
+
+
+
+
+
+
 </html>
