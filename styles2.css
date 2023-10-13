@@ -78,6 +78,7 @@ nav a {
     color: var(--white);
     vertical-align: middle;
     flex-direction: row;
+    height:24px;
   
 }
 
@@ -255,7 +256,7 @@ button {
 /* Class Selector*/
 .header {
     width: 100%;
-
+    padding-bottom: 5px;
 }
 
 .portfolio-container {
@@ -371,17 +372,13 @@ div.portfolio-container {
     }
 }
 
-
-@media screen and (min-width:768px) {
+@media screen and (min-width:501px) and (max-width: 768px) {
     div {
         /* border: 1px solid blue; */
         width: 90%;
         display: flex;
         flex-direction: row;
-        align-items: center;
-       
-    
-        
+        align-items: center;    
     }
     .nav a.icon {
         display: none;
@@ -408,6 +405,23 @@ div.portfolio-container {
         
     }
 }
+
+@media screen and (min-width:768px) {
+    .nav a.icon {
+        display: none;
+        
+    }
+    }.portfolio-tiles {
+        width: 150px;
+        height: 150px;
+        
+    }
+    div.portfolio-tiles a {
+        text-decoration: none;
+        color: var(--white);
+        font-size: 20px;
+        
+    }
 
 
 

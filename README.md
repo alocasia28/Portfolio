@@ -7,7 +7,7 @@
 {{ Add a short paragraph describing the features below }}
 - [X] At least one profile picture
 - [ ] Biography (at least 100 words)
-- [ ] Functional Contact Form
+- [X] Functional Contact Form
 - [ ] "Projects" section
 - [ ] Links to external sites e.g Github/LinkedIn
 
@@ -16,9 +16,9 @@
 
 - [X] At least 2 web pages
 - [X] Version controlled with Git
-- [ ] Deployed on GitHub pages
+- [X] Deployed on GitHub pages
 - [ ] Implements responsive design principles.
-- [ ] Uses semantic HTML
+- [X] Uses semantic HTML
 
 ### Bonus (optional)
 {{ Add a short paragraph describing the features below, if you included any. }}
