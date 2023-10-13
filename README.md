@@ -14,7 +14,7 @@
 ### Technical 
 {{ Add a short paragraph describing the features below }}
 
-- [ ] At least 2 web pages
+- [X] At least 2 web pages
 - [X] Version controlled with Git
 - [ ] Deployed on GitHub pages
 - [ ] Implements responsive design principles.
