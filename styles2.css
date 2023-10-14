@@ -78,7 +78,6 @@ nav a {
     color: var(--white);
     vertical-align: middle;
     flex-direction: row;
-    height:24px;
   
 }
 
@@ -260,7 +259,6 @@ button {
     width: 95%;
     display: flex;
     flex-direction: row;
-  
 
 }
 
@@ -423,12 +421,16 @@ div.portfolio-container {display: flex;}
 }
 
 @media screen and (min-width:799px) {
+
     div {
         /* border: 1px solid blue; */
         width: 90%;
         display: flex;
         flex-direction: row;
-        align-items: center;    
+        align-items: center;
+       
+    
+        
     }
     .nav a.icon {
         display: none;
@@ -455,6 +457,7 @@ div.portfolio-container {display: flex;}
         
     }
 }
+
 
 /* md */
 @media (min-width: 768px) {
@@ -526,6 +529,7 @@ div.portfolio-tiles a {
     
 }
 }
+
 
 
 
