@@ -91,10 +91,12 @@ nav a:hover {
 }
 
 
-/* Hide the link that should open and close the topnav on small screens */
-nav.icon {
+/* Hide the link that should open and close the topnav on small screens. 14/10 I have commented this out to see if this
+is what is breaking the hamburger menu intermittently */
+/* nav.icon {
     display: none;
-  }
+  } */
+
 
 /* About Me Section */
 img.profile-picture {
@@ -145,10 +147,8 @@ div.Projects {
 }
 
 .projects-container {
-    margin-top:20px;
     display: flex;
     flex-direction: column;
-    border: var(--dark-grey) 1px solid;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 100px;
@@ -157,7 +157,8 @@ div.Projects {
 
 div.portfolio-tiles a {
     text-decoration: none;
-    color: var(--white)
+    color: var(--white);
+   
 }
 
 div.portfolio-tiles:hover {
@@ -166,7 +167,9 @@ div.portfolio-tiles:hover {
     transition: 0.75;
    
 }
-
+.portfolio-tiles {
+    border: 2px solid var(--white);
+}
 
 
 /* form {
@@ -252,9 +255,10 @@ button {
 
 
 
-/* Class Selector*/
 .header {
-    width: 100%;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
 
 }
 
@@ -262,9 +266,8 @@ button {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 10px;
-    /* border: 1px solid blue; */
+    justify-content:space-around;
+    padding: 40px;
 }
 
 .portfolio-tiles {
@@ -280,14 +283,7 @@ button {
     background-color: var(--focus2);
     color: #FFF;
     border-radius: 100px;
-
-   
-    
 }
-
-
-
-/*Layout*/
 
 
 /* Footer */
@@ -295,45 +291,35 @@ footer {
     background-color: var(--focus3);
     width: 100%;
     text-align: center;
-    font-size: 10px;
+    font-size: 16px;
     display:block;
     border-radius: 10px;
+    color: var(--white);
    
 }
 
 footer a{
-    color: white;
+    color: var(--focus1);
     text-decoration:none ;
+}
+footer a:hover{
+    text-decoration: underline;
 }
 
 
 
 /* Media Queries */
-@media (max-width:600px) {
+/* @media (max-width:600px) {
     
-div.portfolio-container {
-    display: flex;
+div.portfolio-container {display: flex;}
 
-}
-
-}
-    /* @media(max-width:600px) {
-        nav a {
-            display:none;
-        }
-        div {
-            background-color: red;
-        }
-    } */
-
-
-    /* media query with the hamburger menu working */
+} */
+/* media query with the hamburger menu working and XS*/
 @media screen and (max-width: 500px) {
     
     .nav a:not(:first-child) {display: none;}
     .nav a.icon {
-        display: right;
-    
+        display: flex;
     }
 
     nav a {
@@ -342,6 +328,14 @@ div.portfolio-container {
     }
     .nav.responsive {position: relative;}
     
+    div.nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end; 
+    }
+
+
+
     .nav.responsive .icon {
     position: absolute;
     right: 0;
@@ -358,6 +352,19 @@ div.portfolio-container {
         font-size: 2em;
     }
 
+    h2,h3 {
+        font-size: 1.5em;
+    }
+
+    .projects-container {
+        margin-top:150px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 100px;
+    }
+
     div#Contact-Form.form-container {
         width: 80%;
         display: flex;
@@ -369,10 +376,52 @@ div.portfolio-container {
         border: var(--dark-grey) 2px solid;
         
     }
+
+    div.logo {
+        display: flex;
+        align-items:start;
+        font-size: 10px;
+    }
 }
 
+@media screen and (min-width:501px) and (max-width: 799px) {
+    div {
+        /* border: 1px solid blue; */
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+       
+        
+    }
+    .nav a.icon {
+        display: none;
+        
+    }
+    div.nav {
+        display: flex;
+        justify-content:right;
+        padding-right: 20px;
+    }
 
-@media screen and (min-width:768px) {
+    .nav a {
+        font-size:1.25em;
+    }
+    .portfolio-tiles {
+        width: 130px;
+        height: 130px;
+        
+    }
+    div.portfolio-tiles a {
+        text-decoration: none;
+        color: var(--white);
+        font-size: 20px;
+        
+    }
+}
+
+@media screen and (min-width:799px) {
+
     div {
         /* border: 1px solid blue; */
         width: 90%;
@@ -407,6 +456,78 @@ div.portfolio-container {
         font-size: 20px;
         
     }
+}
+
+
+/* md */
+@media (min-width: 768px) {
+    div {
+        /* border: 1px solid blue; */
+        /* width: 90%; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;    
+    }
+    .nav a.icon {
+        display: none;
+        
+    }
+    div.nav {
+        display: flex;
+        justify-content:right;
+        padding-right: 20px;
+    }
+
+    .nav a {
+        font-size:1.25em;
+    }
+    .portfolio-tiles {
+        width: 150px;
+        height: 150px;
+        
+    }
+    div.portfolio-tiles a {
+        text-decoration: none;
+        color: var(--white);
+        font-size: 20px;
+        
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+div {
+    /* border: 10px solid red; */
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+}
+.nav a.icon {
+    display: none;
+    
+}
+div.nav {
+    display: flex;
+    justify-content:right;
+    padding-right: 20px;
+}
+
+.nav a {
+    font-size:1.25em;
+}
+.portfolio-tiles {
+    width: 150px;
+    height: 150px;
+   
+    
+}
+div.portfolio-tiles a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 20px;
+    
+}
 }
 
 
