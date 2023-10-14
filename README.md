@@ -9,7 +9,7 @@
 - [ ] Biography (at least 100 words)
 - [X] Functional Contact Form
 - [ ] "Projects" section
-- [ ] Links to external sites e.g Github/LinkedIn
+- [X] Links to external sites e.g Github/LinkedIn
 
 ### Technical 
 {{ Add a short paragraph describing the features below }}
