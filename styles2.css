@@ -92,10 +92,12 @@ nav a:hover {
 }
 
 
-/* Hide the link that should open and close the topnav on small screens */
-nav.icon {
+/* Hide the link that should open and close the topnav on small screens. 14/10 I have commented this out to see if this
+is what is breaking the hamburger menu intermittently */
+/* nav.icon {
     display: none;
-  }
+  } */
+
 
 /* About Me Section */
 img.profile-picture {
@@ -146,10 +148,8 @@ div.Projects {
 }
 
 .projects-container {
-    margin-top:20px;
     display: flex;
     flex-direction: column;
-    border: var(--dark-grey) 1px solid;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 100px;
@@ -253,18 +253,21 @@ button {
 
 
 
-/* Class Selector*/
 .header {
-    width: 100%;
-    padding-bottom: 5px;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+  
+
 }
 
 .portfolio-container {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 10px;
+    justify-content:space-evenly;
+    padding: 40px;
+
     /* border: 1px solid blue; */
 }
 
@@ -281,14 +284,7 @@ button {
     background-color: var(--focus2);
     color: #FFF;
     border-radius: 100px;
-
-   
-    
 }
-
-
-
-/*Layout*/
 
 
 /* Footer */
@@ -318,23 +314,12 @@ div.portfolio-container {
 }
 
 }
-    /* @media(max-width:600px) {
-        nav a {
-            display:none;
-        }
-        div {
-            background-color: red;
-        }
-    } */
-
-
     /* media query with the hamburger menu working */
 @media screen and (max-width: 500px) {
     
     .nav a:not(:first-child) {display: none;}
     .nav a.icon {
-        display: right;
-    
+        display: flex;
     }
 
     nav a {
@@ -343,6 +328,14 @@ div.portfolio-container {
     }
     .nav.responsive {position: relative;}
     
+    div.nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end; 
+    }
+
+
+
     .nav.responsive .icon {
     position: absolute;
     right: 0;
@@ -358,6 +351,14 @@ div.portfolio-container {
     h1 {
         font-size: 2em;
     }
+    .projects-container {
+        margin-top:150px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 100px;
+    }
 
     div#Contact-Form.form-container {
         width: 80%;
@@ -370,9 +371,51 @@ div.portfolio-container {
         border: var(--dark-grey) 2px solid;
         
     }
+
+    div.logo {
+        display: flex;
+        align-items:start;
+        font-size: 10px;
+    }
 }
 
 @media screen and (min-width:501px) and (max-width: 768px) {
+    div {
+        /* border: 1px solid blue; */
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+       
+        
+    }
+    .nav a.icon {
+        display: none;
+        
+    }
+    div.nav {
+        display: flex;
+        justify-content:right;
+        padding-right: 20px;
+    }
+
+    .nav a {
+        font-size:1.25em;
+    }
+    .portfolio-tiles {
+        width: 150px;
+        height: 150px;
+        
+    }
+    div.portfolio-tiles a {
+        text-decoration: none;
+        color: var(--white);
+        font-size: 20px;
+        
+    }
+}
+
+@media screen and (min-width:768px) {
     div {
         /* border: 1px solid blue; */
         width: 90%;
