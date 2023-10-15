@@ -281,8 +281,35 @@ button {
 
 /* Projects Section */
 
+table,
+th,
+td {
+    border: 1px solid var(--white);
+    border-collapse:collapse;
+    color: var(--white);
+    /* border-radius: 10px; */
+}
 
+table {
+    margin-bottom: 100px;
+}
+    
+th, td {
+    padding: 5px;
+}
+    
+th {
+    background-color: var(--focus1);
+}
 
+td {
+    background-color: var(--focus2);
+}
+
+img.other-pics {
+    width: 200px;
+    border-radius: 10px;
+}
 /* Footer */
 footer {
     background-color: var(--focus3);
@@ -385,6 +412,10 @@ div.portfolio-container {display: flex;}
         display: flex;
         align-items:start;
         font-size: 10px;
+    }
+
+    table {
+        font-size: auto;
     }
 }
 
