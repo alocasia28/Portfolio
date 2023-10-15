@@ -78,7 +78,6 @@ nav a {
     color: var(--white);
     vertical-align: middle;
     flex-direction: row;
-    height:24px;
   
 }
 
@@ -254,7 +253,6 @@ button {
     width: 95%;
     display: inline-flex;
     flex-direction: row;
-  
 
 }
 
@@ -436,7 +434,10 @@ div.portfolio-container {display: flex;}
         width: 90%;
         display: flex;
         flex-direction: row;
-        align-items: center;    
+        align-items: center;
+       
+    
+        
     }
     .nav a.icon {
         display: none;
@@ -466,6 +467,7 @@ div.portfolio-container {display: flex;}
         margin: auto;
     }
 }
+
 
 /* md */
 @media (min-width: 768px) {
