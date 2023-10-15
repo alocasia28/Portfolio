@@ -31,7 +31,7 @@ This is my favourite bit! I've added a hover effect to the nav bar links and the
 > - The different features of your site, e.g. if you have hover states, take a screenshot that shows that. 
 
 #### IMG_5356.PNG
-! [Screenshot of index.html on iPhone XR 1/2] (screenshots/IMG_5356.PNG)
+[Screenshot of index.html on iPhone XR 1/2] (/screenshots/IMG_5356.PNG)
 
 #### IMG_5357.PNG
 ! [Screenshot of index.html on iPhone XR 2/2] (screenshots/IMG_5357.PNG)
