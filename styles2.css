@@ -3,6 +3,15 @@
     padding: 0;
 }
 
+:root {
+    --grey:#dce2e6;
+    --focus1: #10634b;
+    --focus2: #ab5718;
+    --focus3: #9d386c;
+    --white: #fff;
+    --dark-grey: #888888;
+    font-size: 1em;
+}
 html{
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
@@ -15,15 +24,7 @@ html{
     box-sizing: inherit;
 }
 
-:root {
-    --grey:#dce2e6;
-    --focus1: #10634b;
-    --focus2: #ab5718;
-    --focus3: #9d386c;
-    --white: #fff;
-    --dark-grey: #888888;
-    font-size: 1em;
-}
+
 /* Formatting for multiple elements */
 div {
     /* border: 1px solid red; */
