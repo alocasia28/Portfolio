@@ -8,16 +8,16 @@ This website includes a section with a profile picture and some words about me. 
 - [X] At least one profile picture
 - [X] Biography (at least 100 words)
 - [X] Functional Contact Form
-- [ ] "Projects" section
+- [X] "Projects" section
 - [X] Links to external sites e.g Github/LinkedIn
 
 ### Technical 
-{{ Add a short paragraph describing the features below }}
+The website comprises of a main page and a projects page. It is version controlled with Git(life-saver) and has been deployed to GitHub pages. 
 
 - [X] At least 2 web pages
 - [X] Version controlled with Git
 - [X] Deployed on GitHub pages
-- [ ] Implements responsive design principles.
+- [X] Implements responsive design principles.
 - [X] Uses semantic HTML
 
 ### Bonus (optional)
