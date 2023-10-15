@@ -22,6 +22,7 @@ html{
     --focus3: #9d386c;
     --white: #fff;
     --dark-grey: #888888;
+    font-size: 1em;
 }
 /* Formatting for multiple elements */
 div {
@@ -61,7 +62,6 @@ h1 {
     margin:20px;
     color: var(--white);
     /* color: var(--grey); */
-    font-size: 2.5em;
 }
 
 nav {
@@ -168,9 +168,7 @@ div.portfolio-tiles:hover {
     transition: 0.75;
    
 }
-.portfolio-tiles {
-    border: 2px solid var(--white);
-}
+
 
 
 /* form {
@@ -252,13 +250,9 @@ button {
 
 
 
-/* Hero Section */
-
-
-
 .header {
     width: 95%;
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
   
 
@@ -274,18 +268,21 @@ button {
 
 .portfolio-tiles {
     margin: 2px;
-    padding: 2px;
+    /* padding: 2px; */
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 80px;
-    height: 80px;
     display: flex;
     font-size: small;
     background-color: var(--focus2);
-    color: #FFF;
+    color: var(--white);
     border-radius: 100px;
+    border: 2px solid var(--white);
+    
 }
+
+/* Projects Section */
+
 
 
 /* Footer */
@@ -293,10 +290,12 @@ footer {
     background-color: var(--focus3);
     width: 100%;
     text-align: center;
-    font-size: 16px;
+    height: auto;
     display:block;
     border-radius: 10px;
     color: var(--white);
+    display: flex;
+    justify-content: center;
    
 }
 
@@ -317,7 +316,7 @@ div.portfolio-container {display: flex;}
 
 } */
 /* media query with the hamburger menu working and XS*/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 634px) {
     
     .nav a:not(:first-child) {display: none;}
     .nav a.icon {
@@ -351,13 +350,18 @@ div.portfolio-container {display: flex;}
     }
 
     h1 {
-        font-size: 2em;
+        font-size: 1.8em;
+
     }
 
     h2,h3 {
         font-size: 1.5em;
     }
 
+    div.portfolio-tiles {
+        width: 80px;
+        height: 80px;
+    }
     .projects-container {
         margin-top:150px;
         display: flex;
@@ -386,7 +390,7 @@ div.portfolio-container {display: flex;}
     }
 }
 
-@media screen and (min-width:501px) and (max-width: 799px) {
+@media screen and (min-width:635px) and (max-width: 768px) {
     div {
         /* border: 1px solid blue; */
         width: 90%;
@@ -420,9 +424,13 @@ div.portfolio-container {display: flex;}
         font-size: 20px;
         
     }
+
+    .header {
+        font-size: 12px;
+    }
 }
 
-@media screen and (min-width:799px) {
+@media screen and (min-width:768px) {
     div {
         /* border: 1px solid blue; */
         width: 90%;
@@ -453,6 +461,9 @@ div.portfolio-container {display: flex;}
         color: var(--white);
         font-size: 20px;
         
+    }
+    .header {
+        margin: auto;
     }
 }
 
@@ -488,6 +499,9 @@ div.portfolio-container {display: flex;}
         color: var(--white);
         font-size: 20px;
         
+    }
+    .header {
+        font-size: 12px;
     }
 }
 
@@ -526,7 +540,38 @@ div.portfolio-tiles a {
     
 }
 }
-
+@media (min-width: 1440px) {
+    div {
+        /* border: 10px solid red; */
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;    
+    }
+    .nav a.icon {
+        display: none;
+        
+    }
+    div.nav {
+        display: flex;
+        justify-content:right;
+        padding-right: 20px;
+    }
+    
+   
+    .portfolio-tiles {
+        width: 150px;
+        height: 150px;
+       
+        
+    }
+    div.portfolio-tiles a {
+        text-decoration: none;
+        color: var(--white);
+        font-size: 20px;
+        
+    }
+}
 
 
       
