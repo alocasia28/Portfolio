@@ -12,7 +12,7 @@ This website includes a section with a profile picture and some words about me. 
 - [X] Links to external sites e.g Github/LinkedIn
 
 ### Technical 
-The website comprises of a main page and a projects page. It is version controlled with Git(life-saver) and has been deployed to GitHub pages. 
+The website comprises of a main page and a projects page. It is version controlled with Git(life-saver) and has been deployed to GitHub pages. To incorporate responsive design principles, the website has been created with a mobile first design and has 5 media queries on it which adjust the navigation bar, size of items, and the layout for the following breakpoints: <634px,635-768px, >769px, >1024px,and >1440px
 
 - [X] At least 2 web pages
 - [X] Version controlled with Git
@@ -21,9 +21,9 @@ The website comprises of a main page and a projects page. It is version controll
 - [X] Uses semantic HTML
 
 ### Bonus (optional)
-{{ Add a short paragraph describing the features below, if you included any. }}
+This is my favourite bit! I've added a hover effect to the nav bar links and the portfolio tiles to change the background color to pink. The contact form fields change to pink in a focused state. And finally, a little bit of JS helps with the inclusion of a hamburger menu for screen widths <634px
 - [X] Different styles for active, hover and focus states.
-- [ ] Include JS to add some dynamic elements to your site.
+- [X] Include JS to add some dynamic elements to your site.
 
 ### Screenshots
 > Please include the following:
