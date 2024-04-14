@@ -45,8 +45,10 @@ This is my favourite bit! I've added a hover effect to the nav bar links and the
 #### IMG_5360.PNG
 ! [iPhone XR form with focus effect] (screenshots/IMG_5360.PNG)
 
-#### IMG_5361.PNG
-! [Screenshot of projects.html on iPhone XR] (screenshots/IMG_5361.PNG)
+#### IMG_5361.PNG 
+[Screenshot of projects.html on iPhone XR] (screenshots/IMG_5361.PNG)
+
+
 
 
 > You can do this by saving the images in a folder in your repo, and including them in your readme document with the following Markdown code:
