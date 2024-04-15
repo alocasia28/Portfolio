@@ -38,6 +38,7 @@ div {
 div.heading {
     display: flex;
     justify-content: center;
+    margin: 20px;
 }
 
 main {
@@ -119,6 +120,7 @@ div.about-me-container {
     padding: 10px;
     border-radius: 10px;
     color: var(--focus1);
+    margin: 20px;
     
 }
 
@@ -141,7 +143,7 @@ p {
 /* Projects Section */
 
 div.Projects {
-    padding-bottom: 100px;
+    padding-bottom: 300px;
     /* background-color: var(--grey); */
     /* opacity: 90%; */
     color: #e7fffc;
@@ -170,7 +172,58 @@ div.portfolio-tiles:hover {
    
 }
 
+/* Projects Section */
+project-section {
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    gap: 20px;
+    margin-top: 20px;
+}
 
+.project {
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 200px; */
+    min-height: 200px;
+    width: 400px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #ccc;
+    margin: 20px;
+    
+}
+
+.project-details {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.project h3,
+.project p {
+    margin: 0;
+}
+
+.project a {
+    text-decoration: none;
+    color: #10634b;
+    
+    
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .project {
+        flex-direction: column;
+    }
+
+    .project img {
+        margin-bottom: 10px;
+    }
+}
 
 /* form {
     display:flex;
@@ -453,6 +506,14 @@ footer a:hover{
     .header {
         font-size: 12px;
     }
+    .project {
+        flex-direction: column;
+    }
+
+    .project img {
+        margin-bottom: 10px;
+    }
+    
 }
 
 @media screen and (min-width:769px) {
